@@ -10,6 +10,9 @@ export class ColorComponent implements OnInit {
   img: Img = {
     name: ''
   }
+  r=1
+  b=1
+  g=1
 
   girl() {
     this.img.name = 'https://img-amp.tinmoi.vn/thumbamp/upload/honghanh/2020/05/14/chan-dai-thi-phi-si-thanh-khoe-lung-tran-goi-cam1589425289.jpg'
