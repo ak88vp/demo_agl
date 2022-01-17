@@ -15,6 +15,8 @@ import { ProgressBarComponent } from './component/progress-bar/progress-bar.comp
 import { RatingBarComponentComponent } from './component/rating-bar-component/rating-bar-component.component';
 import { CountdownTimerComponent } from './component/countdown-timer/countdown-timer.component';
 import { BirthdayComponent } from './component/birthday/birthday.component';
+import { TodoComponent } from './component/todo/todo.component';
+import { ValidatorsComponent } from './validators/validators.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BirthdayComponent } from './component/birthday/birthday.component';
     ProgressBarComponent,
     RatingBarComponentComponent,
     CountdownTimerComponent,
-    BirthdayComponent
+    BirthdayComponent,
+    TodoComponent,
+    ValidatorsComponent
   ],
   imports: [
     BrowserModule,
