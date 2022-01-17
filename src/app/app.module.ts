@@ -11,7 +11,6 @@ import { ColorComponent } from './component/color/color.component';
 import { ArticleComponent } from './component/article/article.component';
 import { LikeComponent } from './component/like/like.component';
 import { NameCardComponent } from './component/name-card/name-card.component';
-import { Ak88Component } from './component/ak88/ak88.component';
 import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 import { RatingBarComponentComponent } from './component/rating-bar-component/rating-bar-component.component';
 import { CountdownTimerComponent } from './component/countdown-timer/countdown-timer.component';
@@ -28,7 +27,6 @@ import { BirthdayComponent } from './component/birthday/birthday.component';
     ArticleComponent,
     LikeComponent,
     NameCardComponent,
-    Ak88Component,
     ProgressBarComponent,
     RatingBarComponentComponent,
     CountdownTimerComponent,

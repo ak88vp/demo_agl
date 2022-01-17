@@ -35,11 +35,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
   create(){
-    let newPro={
-      id :this.product.value.id,
-      name :this.product.value.name,
-      price :this.product.value.price,
-    }
+
     // @ts-ignore
     this.listProduct.push(this.product.value)
   }
