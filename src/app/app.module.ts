@@ -15,6 +15,7 @@ import { NameCardComponent } from './name-card/name-card.component';
 import { Ak88Component } from './ak88/ak88.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { RatingBarComponentComponent } from './rating-bar-component/rating-bar-component.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RatingBarComponentComponent } from './rating-bar-component/rating-bar-c
     NameCardComponent,
     Ak88Component,
     ProgressBarComponent,
-    RatingBarComponentComponent
+    RatingBarComponentComponent,
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,
