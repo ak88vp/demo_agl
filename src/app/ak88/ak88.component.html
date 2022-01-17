@@ -1,4 +1,4 @@
-<form [formGroup]="bioSection" (ngSubmit)="callingFunction()">
+<form [formGroup]="bioSection" >
 
   <label>
     First Name:
@@ -12,5 +12,5 @@
     Age:
     <input type="text" formControlName="age">
   </label>
-  <button type="submit">Submit Application</button>
+  <button type="submit" (click)="callingFunction()">Submit Application</button>
 </form>
