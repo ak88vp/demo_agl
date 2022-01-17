@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DemoAglComponent } from './demo-agl/demo-agl.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { PetComponent } from './pet/pet.component';
 import { ProductComponent } from './product/product.component';
 import { CalculatorComponent } from './calculator/calculator.component';
@@ -16,6 +15,7 @@ import { Ak88Component } from './ak88/ak88.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { RatingBarComponentComponent } from './rating-bar-component/rating-bar-component.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { BirthdayComponent } from './birthday/birthday.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +31,15 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     Ak88Component,
     ProgressBarComponent,
     RatingBarComponentComponent,
-    CountdownTimerComponent
+    CountdownTimerComponent,
+    BirthdayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
