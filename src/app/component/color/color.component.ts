@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Img} from "../img";
+import {Img} from "../../img";
 
 @Component({
   selector: 'app-color',

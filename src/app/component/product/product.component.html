@@ -1,0 +1,34 @@
+<table class="table">
+  <thead class="table-dark">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let product of listProduct">
+  <tr>
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<form [formGroup]="product" >
+  <label>
+    ID:
+    <input type="text" formControlName="id">
+  </label>
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <label>
+    price
+    <input type="text" formControlName="price">
+  </label>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="create()">create</button>
+</form>
+
+
