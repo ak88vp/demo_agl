@@ -17,8 +17,9 @@ import { CountdownTimerComponent } from './component/countdown-timer/countdown-t
 import { BirthdayComponent } from './component/birthday/birthday.component';
 import { TodoComponent } from './component/todo/todo.component';
 import { ValidatorsComponent } from './component/validators/validators.component';
-import {MyserviceService} from "./myservice.service";
-import { TestServiceComponent } from './test-service/test-service.component';
+import {MyserviceService} from "./service/myservice.service";
+import { TestServiceComponent } from './component/test-service/test-service.component';
+import { TimelinesComponent } from './component/timelines/timelines.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TestServiceComponent } from './test-service/test-service.component';
     BirthdayComponent,
     TodoComponent,
     ValidatorsComponent,
-    TestServiceComponent
+    TestServiceComponent,
+    TimelinesComponent
   ],
   imports: [
     BrowserModule,
