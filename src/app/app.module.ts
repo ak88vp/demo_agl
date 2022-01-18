@@ -27,6 +27,10 @@ import { ProductCreateComponent } from './product/product-create/product-create.
 import { DictionaryPageComponent } from './component/dictionary-page/dictionary-page.component';
 import { DictionaryDetailComponent } from './component/dictionary-detail/dictionary-detail.component';
 import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
+import {HttpClientModule} from "@angular/common/http";
+import { StatusListComponent } from './component/status-list/status-list.component';
+import { StatusCreateComponent } from './component/status-create/status-create.component';
+import { StatusEditComponent } from './component/status-edit/status-edit.component';
 
 @NgModule({
   declarations: [
@@ -53,13 +57,17 @@ import { ProductDeleteComponent } from './product/product-delete/product-delete.
     ProductCreateComponent,
     DictionaryPageComponent,
     DictionaryDetailComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    StatusListComponent,
+    StatusCreateComponent,
+    StatusEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [MyserviceService],

@@ -8,6 +8,9 @@ import {ProductCreateComponent} from "./product/product-create/product-create.co
 import {DictionaryPageComponent} from "./component/dictionary-page/dictionary-page.component";
 import {DictionaryDetailComponent} from "./component/dictionary-detail/dictionary-detail.component";
 import {ProductDeleteComponent} from "./product/product-delete/product-delete.component";
+import {StatusListComponent} from "./component/status-list/status-list.component";
+import {StatusEditComponent} from "./component/status-edit/status-edit.component";
+import {StatusCreateComponent} from "./component/status-create/status-create.component";
 
 const routes: Routes = [{
   path: 'timelines',
@@ -38,6 +41,16 @@ const routes: Routes = [{
   },{
     path:'dictionarys/:id',
     component :DictionaryDetailComponent
+  },
+  {
+    path:'status',
+    component :StatusListComponent
+  },{
+    path:'status/create',
+    component :StatusCreateComponent
+  },{
+    path:'status/edit/:id',
+    component :StatusEditComponent
   },
 ];
 
