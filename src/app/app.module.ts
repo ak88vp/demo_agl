@@ -16,7 +16,9 @@ import { RatingBarComponentComponent } from './component/rating-bar-component/ra
 import { CountdownTimerComponent } from './component/countdown-timer/countdown-timer.component';
 import { BirthdayComponent } from './component/birthday/birthday.component';
 import { TodoComponent } from './component/todo/todo.component';
-import { ValidatorsComponent } from './validators/validators.component';
+import { ValidatorsComponent } from './component/validators/validators.component';
+import {MyserviceService} from "./myservice.service";
+import { TestServiceComponent } from './test-service/test-service.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { ValidatorsComponent } from './validators/validators.component';
     CountdownTimerComponent,
     BirthdayComponent,
     TodoComponent,
-    ValidatorsComponent
+    ValidatorsComponent,
+    TestServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,7 @@ import { ValidatorsComponent } from './validators/validators.component';
     ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
