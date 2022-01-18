@@ -1,0 +1,47 @@
+<form [formGroup]="user">
+  <label>
+    age
+    <input type="text" formControlName="age">
+    <div *ngIf="user.controls['age'].errors?.['required']&&user.controls['age'].touched">
+      Không được bỏ trống
+    </div>
+    <div *ngIf="user.controls['age'].errors?.['min']&&user.controls['age'].touched">
+      Tuổi lớn hơn 18 .
+    </div>
+  </label>
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+    <div *ngIf="user.controls['name'].errors?.['maxLength']&&user.touched">
+      Không được lớn hơn 4 kí tự
+    </div>
+  </label>
+  <label>
+    address
+    <input type="text" formControlName="address">
+    <div *ngIf="user.controls['address'].errors?.['required']&& user.controls['address'].touched">
+      Không được bỏ trống
+    </div>
+    <div *ngIf="user.controls['name'].value != user.controls['address'].value && user.controls['address'].touched">
+      địa chỉ phải giống tên ( t thích vậy )
+    </div>
+  </label>
+  <label>
+    address
+    <input type="text" formControlName="phone">
+    <div *ngIf="user.controls['phone'].errors?.['required'] && user.controls['phone'].touched">
+      Không được bỏ trống
+    </div>
+    <div *ngIf="user.controls['phone'].errors?.['pattern'] && user.controls['phone'].touched">
+      Sai định dạng
+    </div>
+  </label>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="create()"
+          [disabled]="!user.valid">create
+  </button>
+</form>
+<!--<div class="col alert alert-danger" role="alert"-->
+<!--     *ngIf="user.hasError('invalidusername', ['age'])"> anh-->
+
+<!--</div>-->
+

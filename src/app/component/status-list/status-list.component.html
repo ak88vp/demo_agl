@@ -1,0 +1,32 @@
+<div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-1">
+      <a class=" btn btn-danger" [routerLink]="['/status/create']" > Create</a>
+    </div>
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let stt of status ; index as i">
+        <tr>
+          <td>{{i+1}}</td>
+          <td>{{stt.id}}</td>
+          <td>{{stt.name}}</td>
+          <td><a class="btn btn-warning" [routerLink]="['/status/edit',stt.id]"> Edit</a></td>
+          <td><a class=" btn btn-info" (click)="deleteStatus(stt.id)" > Delete</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+</div>

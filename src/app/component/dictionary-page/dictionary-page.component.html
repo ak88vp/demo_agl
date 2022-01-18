@@ -1,0 +1,5 @@
+<p *ngFor="let dictionary of dictionarys; index as i">
+  {{i + 1}}
+  <a [routerLink]="['/dictionarys', dictionary.id]"> {{dictionary.name}}</a>
+</p>
+

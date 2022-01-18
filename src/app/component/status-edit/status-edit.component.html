@@ -1,0 +1,22 @@
+<div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h1>Sửa</h1>
+      <form [formGroup]="statusForm" (ngSubmit)="update()">
+        <table>
+          <tr >
+            <td>Mã :</td>
+            <td><input type="hidden" formControlName="id">{{status.id}} </td>
+          </tr>
+          <tr>
+            <td> Chế độ:</td>
+            <td><input type="text" formControlName="name" value="{{status.name}}" ></td>
+          </tr>
+        </table>
+        <button class="btn bg-primary" > Update</button>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
