@@ -31,6 +31,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { StatusListComponent } from './component/status-list/status-list.component';
 import { StatusCreateComponent } from './component/status-create/status-create.component';
 import { StatusEditComponent } from './component/status-edit/status-edit.component';
+import { BlogListComponent } from './component/blog-list/blog-list.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { StatusEditComponent } from './component/status-edit/status-edit.compone
     ProductDeleteComponent,
     StatusListComponent,
     StatusCreateComponent,
-    StatusEditComponent
+    StatusEditComponent,
+    BlogListComponent
   ],
   imports: [
     BrowserModule,

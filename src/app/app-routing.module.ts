@@ -11,6 +11,7 @@ import {ProductDeleteComponent} from "./product/product-delete/product-delete.co
 import {StatusListComponent} from "./component/status-list/status-list.component";
 import {StatusEditComponent} from "./component/status-edit/status-edit.component";
 import {StatusCreateComponent} from "./component/status-create/status-create.component";
+import {BlogListComponent} from "./component/blog-list/blog-list.component";
 
 const routes: Routes = [{
   path: 'timelines',
@@ -51,6 +52,10 @@ const routes: Routes = [{
   },{
     path:'status/edit/:id',
     component :StatusEditComponent
+  },
+  {
+    path:'blogs',
+    component :BlogListComponent
   },
 ];
 
