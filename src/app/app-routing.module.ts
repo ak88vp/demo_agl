@@ -14,6 +14,7 @@ import {StatusCreateComponent} from "./component/status-create/status-create.com
 import {BlogListComponent} from "./component/blog-list/blog-list.component";
 import {BlogCreateComponent} from "./component/blog-create/blog-create.component";
 import {BlogEditComponent} from "./component/blog-edit/blog-edit.component";
+import {DemoApiComponent} from "./demo-api/demo-api.component";
 
 const routes: Routes = [{
   path: 'timelines',
@@ -64,6 +65,9 @@ const routes: Routes = [{
   },{
     path:'blogs/edit/:id',
     component :BlogEditComponent
+  },{
+    path:'demo',
+    component :DemoApiComponent
   },
 ];
 

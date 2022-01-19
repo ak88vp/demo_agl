@@ -26,7 +26,7 @@
             <td>
               <select formControlName="status">
                 <option [ngValue]="null" disabled>Chế độ</option>
-              <option *ngFor="let stt of status" value="{{stt.id}}">{{stt.name}}
+              <option *ngFor="let stt of status" [(ngModel)]="stt.id">{{stt.name}}
               </option>
             </select></td>
           </tr>

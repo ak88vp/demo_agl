@@ -19,7 +19,6 @@ export class BlogListComponent implements OnInit {
       console.log(rs)
     })
   }
-
 // @ts-ignore
   deleteBlog(id) {
     if (confirm("Bạn có chắc chắc muốn xóa không ?")) {

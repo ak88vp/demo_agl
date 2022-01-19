@@ -1,0 +1,33 @@
+<div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h1>Sửa</h1>
+      <form [formGroup]="blogForm" (ngSubmit)="update()">
+        <table>
+          <tr >
+            <td>Mã :</td>
+            <td><input type="hidden" formControlName="id">{{blog.id}} </td>
+          </tr>
+          <tr>
+            <td> Chủ đề:</td>
+            <td><input type="text" formControlName="title" [(ngModel)]="blog.title" ></td>
+          </tr> <tr>
+            <td> Nội dung :</td>
+            <td><input type="text" formControlName="content" [(ngModel)]="blog.content" ></td>
+          </tr> <tr>
+            <td> </td>
+          <td>
+            <select formControlName="status" >
+              <option selected="selected" value="null" ><p>{{blog.status?.name}}</p></option>
+              <option *ngFor="let stt of status " value="{{stt.id}}">{{stt.name}}
+              </option>
+            </select></td>
+          </tr>
+        </table>
+        <button class="btn bg-primary" > Update</button>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
