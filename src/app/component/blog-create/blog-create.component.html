@@ -1,0 +1,44 @@
+<div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h1>Tạo sản phẩm mới</h1>
+      <form [formGroup]="blogForm" (ngSubmit)="create()">
+        <table>
+          <tr>
+            <td></td>
+            <td><input type="hidden" formControlName="id"></td>
+          </tr>
+          <tr>
+            <td>Tiêu đề:</td>
+            <td><input type="text" formControlName="title"></td>
+          </tr>
+          <tr>
+            <td>Nội dung:</td>
+            <td><input type="text" formControlName="content"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="hidden" formControlName="time"></td>
+          </tr>
+          <tr>
+            <td> Chế độ:</td>
+            <td>
+              <select formControlName="status">
+                <option [ngValue]="null" disabled>Chế độ</option>
+              <option *ngFor="let stt of status" value="{{stt.id}}">{{stt.name}}
+              </option>
+            </select></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button class="btn bg-gradient bg-primary">Tạo mới</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
