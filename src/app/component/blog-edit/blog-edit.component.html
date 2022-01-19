@@ -18,10 +18,14 @@
           </tr> <tr>
             <td> </td>
           <td>
-            <select formControlName="status" >
-              <option selected="selected" value="null" ><p>{{blog.status?.name}}</p></option>
-              <option *ngFor="let stt of status " value="{{stt.id}}">{{stt.name}}
+            <select  formControlName="status">
+              <option [value]="null">{{blog.status?.name}}</option>
+              <option *ngFor="let title of status"
+                      [value]="title.id"
+                      >
+                {{title.name}}
               </option>
+
             </select></td>
           </tr>
         </table>

@@ -53,10 +53,10 @@ export class BlogEditComponent implements OnInit {
   }
 
   update(){
-    if(this.blogForm.value){
-
-    }
     const blog=this.blogForm.value;
+    if(blog.status==null){
+      blog.status=this.blog.status?.id
+    }
     console.log(blog.status)
     this.status1={
       id : blog.status,
