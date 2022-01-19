@@ -12,6 +12,7 @@ import {StatusListComponent} from "./component/status-list/status-list.component
 import {StatusEditComponent} from "./component/status-edit/status-edit.component";
 import {StatusCreateComponent} from "./component/status-create/status-create.component";
 import {BlogListComponent} from "./component/blog-list/blog-list.component";
+import {BlogCreateComponent} from "./component/blog-create/blog-create.component";
 
 const routes: Routes = [{
   path: 'timelines',
@@ -56,6 +57,9 @@ const routes: Routes = [{
   {
     path:'blogs',
     component :BlogListComponent
+  },{
+    path:'blogs/create',
+    component :BlogCreateComponent
   },
 ];
 

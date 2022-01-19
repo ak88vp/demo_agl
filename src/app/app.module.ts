@@ -32,6 +32,7 @@ import { StatusListComponent } from './component/status-list/status-list.compone
 import { StatusCreateComponent } from './component/status-create/status-create.component';
 import { StatusEditComponent } from './component/status-edit/status-edit.component';
 import { BlogListComponent } from './component/blog-list/blog-list.component';
+import { BlogCreateComponent } from './component/blog-create/blog-create.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { BlogListComponent } from './component/blog-list/blog-list.component';
     StatusListComponent,
     StatusCreateComponent,
     StatusEditComponent,
-    BlogListComponent
+    BlogListComponent,
+    BlogCreateComponent
   ],
   imports: [
     BrowserModule,
