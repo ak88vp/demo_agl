@@ -5,16 +5,13 @@
       <h1>Sửa</h1>
       <form [formGroup]="blogForm" (ngSubmit)="update()">
         <table>
-          <tr >
-            <td>Mã :</td>
-            <td><input type="hidden" formControlName="id">{{blog.id}} </td>
-          </tr>
+
           <tr>
             <td> Chủ đề:</td>
             <td><input type="text" formControlName="title" [(ngModel)]="blog.title" ></td>
           </tr> <tr>
             <td> Nội dung :</td>
-            <td><input type="text" formControlName="content" [(ngModel)]="blog.content" ></td>
+          <td><textarea type="text" formControlName="content" [(ngModel)]="blog.content" ></textarea></td>
           </tr> <tr>
             <td> </td>
           <td>
