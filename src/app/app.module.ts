@@ -35,6 +35,10 @@ import { BlogListComponent } from './component/blog-list/blog-list.component';
 import { BlogCreateComponent } from './component/blog-create/blog-create.component';
 import { BlogEditComponent } from './component/blog-edit/blog-edit.component';
 import { DemoApiComponent } from './demo-api/demo-api.component';
+import { BookListComponent } from './book/book-list/book-list.component';
+import { BookCreateComponent } from './book/book-create/book-create.component';
+import { BookEditComponent } from './book/book-edit/book-edit.component';
+import { FindOneComponent } from './book/find-one/find-one.component';
 
 
 @NgModule({
@@ -70,6 +74,10 @@ import { DemoApiComponent } from './demo-api/demo-api.component';
     BlogCreateComponent,
     BlogEditComponent,
     DemoApiComponent,
+    BookListComponent,
+    BookCreateComponent,
+    BookEditComponent,
+    FindOneComponent,
 
   ],
   imports: [

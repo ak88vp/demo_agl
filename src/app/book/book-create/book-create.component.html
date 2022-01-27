@@ -1,0 +1,36 @@
+<div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h1>Tạo Sách</h1>
+      <form [formGroup]="bookForm" (ngSubmit)="create()">
+        <table>
+          <tr>
+            <td></td>
+            <td><input type="hidden" formControlName="id"></td>
+          </tr>
+          <tr>
+            <td>Tiêu đề:</td>
+            <td><input type="text" formControlName="title"></td>
+          </tr>
+          <tr>
+            <td>Tác giả</td>
+            <td><input type="text" formControlName="author"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><textarea type="text" formControlName="description"></textarea></td>
+          </tr>
+          <tr>
+            <td>Nội dung:</td>
+            <td>
+              <button class="btn bg-gradient bg-primary">Tạo mới</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
+

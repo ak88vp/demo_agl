@@ -22,7 +22,7 @@
           <td>{{bl.id}}</td>
           <td>{{bl.title}}</td>
           <td>{{bl.status?.name}}</td>
-          <td><a class="btn btn-warning" [routerLink]="['/blogs/edit',bl.id]"> Edit</a></td>
+          <td><a class="btn btn-warning" [routerLink]="['/edit',bl.id]"> Edit</a></td>
           <td><a class=" btn btn-info" (click)="deleteBlog(bl.id)" > Delete</a></td>
         </tr>
         </tbody>

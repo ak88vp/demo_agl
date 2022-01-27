@@ -1,0 +1,40 @@
+<div>
+  <div class="row">
+    <div class="col-1"> Có {{book.length}} sách </div>
+    <div class="col-1">
+      <a class=" btn btn-danger" [routerLink]="['create']" > Create</a>
+    </div>
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-dark">
+        <tr>
+          <th>DANH SÁCH </th>
+        </tr>
+        </thead>
+        <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let bl of book ; index as i">
+        <tr>
+          <td>{{i+1}}</td>
+          <td>{{bl.id}}</td>
+          <td><a [routerLink]="['/findOne',bl.id]" >{{bl.title}}</a></td>
+          <td>{{bl.author}}</td>
+          <td><a class="btn btn-warning" [routerLink]="['/edit',bl.id]" > Edit</a></td>
+          <td><a class=" btn btn-info" (click)="deleteBook(bl.id)" > Delete</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+</div>
+

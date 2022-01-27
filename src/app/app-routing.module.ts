@@ -15,6 +15,10 @@ import {BlogListComponent} from "./component/blog-list/blog-list.component";
 import {BlogCreateComponent} from "./component/blog-create/blog-create.component";
 import {BlogEditComponent} from "./component/blog-edit/blog-edit.component";
 import {DemoApiComponent} from "./demo-api/demo-api.component";
+import {BookCreateComponent} from "./book/book-create/book-create.component";
+import {BookListComponent} from "./book/book-list/book-list.component";
+import {BookEditComponent} from "./book/book-edit/book-edit.component";
+import {FindOneComponent} from "./book/find-one/find-one.component";
 
 const routes: Routes = [{
   path: 'timelines',
@@ -68,7 +72,20 @@ const routes: Routes = [{
   },{
     path:'demo',
     component :DemoApiComponent
+  },{
+    path:'books/create',
+    component :BookCreateComponent
+  },{
+    path:'books',
+    component :BookListComponent
+  },{
+    path:'edit/:id',
+    component :BookEditComponent
+  },{
+    path:'findOne/:id',
+    component :FindOneComponent
   },
+
 ];
 
 @NgModule({
